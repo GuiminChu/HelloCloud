@@ -8,7 +8,6 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.web.bind.annotation.*;
-import sun.rmi.runtime.Log;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -78,6 +77,11 @@ public class PaymentController {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+        return serverPort;
+    }
+
+    @GetMapping(value = "/lb")
+    public String getPaymentLB() {
         return serverPort;
     }
 
