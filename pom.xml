@@ -24,6 +24,7 @@
         <module>cloud-ali-provider-payment9001</module>
         <module>cloud-ali-provider-payment9002</module>
         <module>cloud-ali-consumer-order83</module>
+        <module>cloud-ali-config-nacos-client3377</module>
     </modules>
 
     <!--  统一管理 jar 包版本-->
